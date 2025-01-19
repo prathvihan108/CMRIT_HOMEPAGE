@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/src/sections/initial_page/initial.css" />
+	</head>
+	<body>
+		{{> header }}
+		<section class="messages">
+			<div class="card-container">
+				<div class="card">
+					<img
+						src="/src/assets/images/Sabitha-Ramamurthy.jpg"
+						alt="Sabitha Ramamurthy"
+					/>
+					<h3>President’s Message</h3>
+					<p>Dr. K. C. Sabitha Ramamurthy</p>
+					<hr />
+					<p>
+						Today, CMR Group of Institutions consists of 19 institutions in
+						India and abroad, 69 different academic programmes, and over 900
+						faculty members...
+					</p>
+					<button class="readmore">Read More</button>
+				</div>
+				<div class="card">
+					<img
+						src="/src/assets/images/Sanjay-Jain.jpg"
+						alt="Sabitha Ramamurthy"
+					/>
+					<h3>Principal’s Message</h3>
+					<p>Dr. Sanjay Jain</p>
+					<hr />
+					<p>
+						Learning is ‘fun’ at CMRIT, as students and faculty members get
+						together to make a difference through persevering and achieving
+						intellectual satisfaction..
+					</p>
+					<button class="readmore">Read More</button>
+				</div>
+				<div class="card">
+					<img
+						src="/src/assets/images/Narasimha-Murthy.jpg"
+						alt="Sabitha Ramamurthy"
+					/>
+					<h3>Vice-Principal’s Message</h3>
+					<p>Dr. B Narasimha Murthy</p>
+					<hr />
+					<p>
+						CMR Institute of Technology (CMRIT), established in the year 2000
+						with a vision to be a globally recognized institution to provide
+						high-quality technical...
+					</p>
+					<button class="readmore">Read More</button>
+				</div>
+			</div>
+		</section>
+		<section class="calender-of-events">
+			<p>Calender of Events</p>
+			<div class="cal-container">
+				<p>
+					<a
+						href="https://www.cmrit.ac.in/wp-content/uploads/2024/05/COE_2023-24-Even-Sem..pdf"
+						>COE_2023-24 (Even Sem.)</a
+					>
+				</p>
+				<p>
+					<a
+						href="https://www.cmrit.ac.in/wp-content/uploads/2024/05/COE_2023-24-Odd-Sem.-.pdf"
+						>COE_2023-24 (Odd Sem.)</a
+					>
+				</p>
+
+				<p>
+					<a
+						href="https://www.cmrit.ac.in/wp-content/uploads/2024/05/CoE-2022-23-Odd-Sem..pdf"
+						>CoE- 2022-23 (Odd Sem.)</a
+					>
+				</p>
+
+				<p>
+					<a
+						href="https://www.cmrit.ac.in/wp-content/uploads/2024/05/CoE-2022-23-Even-Sem..pdf"
+						>CoE- 2022-23 (Even Sem.)</a
+					>
+				</p>
+			</div>
+		</section>
+		<section class="reports">
+			<div class="report-container">
+				<div class="report-box">
+					<img src="/src/assets/images/ARIIA-Logo.jpg" alt="logo" />
+					<a
+						href="https://www.cmrit.ac.in/wp-content/uploads/2021/10/ARIIA-2019-Report.pdf"
+						>ARIIA 2019 Report</a
+					>
+				</div>
+				<div class="report-box">
+					<img src="/src/assets/images/ARIIA-Logo.jpg" alt="logo" />
+					<a
+						href="https://www.cmrit.ac.in/wp-content/uploads/2021/10/ARIIA-2021-Report.pdf"
+						>ARIIA 2021 Report</a
+					>
+				</div>
+				<div class="report-box">
+					<img src="/src/assets/images/ARIIA-Logo.jpg" alt="logo" />
+					<a
+						href="https://www.cmrit.ac.in/wp-content/uploads/2021/10/ARIIA-2020-Report.pdf"
+						>ARIIA 2020 Report</a
+					>
+				</div>
+			</div>
+		</section>
+		<section class="features-section">
+			<p>Why CMRIT?</p>
+			<div class="key-features-container">
+				<div class="info-box">
+					<p>25 years of quality education imparted</p>
+					<hr />
+				</div>
+				<div class="info-box">
+					<p>World-Class Infrastructure & Experienced faculty</p>
+					<hr />
+				</div>
+				<div class="info-box">
+					<p>Infosys Campus Connect</p>
+					<hr />
+				</div>
+				<div class="info-box">
+					<p>Accreditation, Approvals and Recognition by Top boards</p>
+					<hr />
+				</div>
+				<div class="info-box">
+					<p>Centers of Excellence to build industry required skills</p>
+					<hr />
+				</div>
+				<div class="info-box">
+					<p>Institution Innovation Council (HRD initiative)</p>
+					<hr />
+				</div>
+				<div class="info-box">
+					<p>Recruitment by Tier 1 companies</p>
+					<hr />
+				</div>
+				<div class="info-box">
+					<p>Student clubs to hone student talent e-learning</p>
+					<hr />
+				</div>
+			</div>
+		</section>
+		<section class="faqs-section">
+			<p>Frequently asked Questions</p>
+
+			<div class="faq-container">
+				<div class="widget" onclick="toggleWidget(this)">
+					<div class="questions">
+						<button class="expand-btn">
+							1. What are the engineering branches offered?
+						</button>
+						<img
+							src="/src/assets/images/plus.svg"
+							alt="imf"
+							class="toggleimg"
+						/>
+					</div>
+
+					<div class="content">
+						<hr />
+						<p>
+							CMR Institute of Technology offers academic programmes in these
+							fields of engineering.
+						</p>
+						<ul>
+							<li>B.E | Computer Science Engineering</li>
+							<li>B.E | Computer Science Engineering (AI & ML)</li>
+							<li>B.E | Computer Science Engineering (Data Science)</li>
+							<li>B.E | Information Science Engineering</li>
+							<li>B.E | Artificial Intelligence and Data Science</li>
+							<li>B.E | Artificial Intelligence and Machine Learning</li>
+							<li>B.E | Electronics Communication Engineering</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="widget" onclick="toggleWidget(this)">
+					<div class="questions">
+						<button class="expand-btn">
+							2. What are the eligibility requirements for engineering courses
+							at the UG level?
+						</button>
+						<img
+							src="/src/assets/images/plus.svg"
+							alt="img"
+							class="toggleimg"
+						/>
+					</div>
+
+					<div class="content">
+						<hr />
+						<p>
+							Eligibility criteria for UG programmes can be found
+							<a
+								href="https://www.cmrit.ac.in/admissions/undergraduate-admissions/"
+								>here</a
+							>.
+						</p>
+					</div>
+				</div>
+
+				<div class="widget" onclick="toggleWidget(this)">
+					<div class="questions">
+						<button class="expand-btn">
+							3. What are the eligibility requirements for engineering courses
+							at the PG level?
+						</button>
+						<img
+							src="/src/assets/images/plus.svg"
+							alt="img"
+							class="toggleimg"
+						/>
+					</div>
+
+					<div class="content">
+						<hr />
+						<p>
+							Eligibility criteria for PG programmes can be found
+							<a
+								href="https://www.cmrit.ac.in/admissions/postgraduate-admissions/"
+								>here</a
+							>.
+						</p>
+					</div>
+				</div>
+
+				<div class="widget" onclick="toggleWidget(this)">
+					<div class="questions">
+						<button class="expand-btn">
+							4. What are the eligibility requirements for engineering courses
+							at the Doctoral level?
+						</button>
+						<img
+							src="/src/assets/images/plus.svg"
+							alt="img"
+							class="toggleimg"
+						/>
+					</div>
+
+					<div class="content">
+						<hr />
+						<p>
+							Eligibility criteria for Doctoral programmes can be found
+							<a href="https://www.cmrit.ac.in/admissions/doctoral-programmes/"
+								>here</a
+							>
+						</p>
+					</div>
+				</div>
+
+				<div class="widget" onclick="toggleWidget(this)">
+					<div class="questions">
+						<button class="expand-btn">7. When will the classes begin?</button>
+						<img
+							src="/src/assets/images/plus.svg"
+							alt="img"
+							class="toggleimg"
+						/>
+					</div>
+
+					<div class="content">
+						<hr />
+						<p>
+							Classes start around August or September each year, but the exact
+							dates are fixed by the University.
+						</p>
+					</div>
+				</div>
+				<div class="widget" onclick="toggleWidget(this)">
+					<div class="questions">
+						<button class="expand-btn">
+							5. Does CMRIT have the necessary affiliations?
+						</button>
+						<img
+							src="/src/assets/images/plus.svg"
+							alt="img"
+							class="toggleimg"
+						/>
+					</div>
+
+					<div class="content">
+						<hr />
+						<p>
+							Yes. The CMR Institute of Technology is affiliated to Visvesvaraya
+							Technological University, and is approved by AICTE New Delhi.
+							Recognizing the high standards maintained by the college in
+							offering quality technical education, the National Board of
+							Accreditation (NBA), a national body setup under AICTE has awarded
+							accreditation status to all departments at CMRIT.
+						</p>
+					</div>
+				</div>
+				<div class="widget" onclick="toggleWidget(this)">
+					<div class="questions">
+						<button class="expand-btn">
+							8. Who can appear for the CET entrance exam?
+						</button>
+						<img
+							src="/src/assets/images/plus.svg"
+							alt="img"
+							class="toggleimg"
+						/>
+					</div>
+
+					<div class="content">
+						<hr />
+						<p>
+							CET is held in Karnataka for students with Karnataka domicile
+							(details on these eligibility clauses can be found at
+							www.kea.kar.nic.in). Students from Karnataka with SC/ST or OBC
+							certificates and under General Merit can avail seats based on
+							their CET ranking.
+						</p>
+					</div>
+				</div>
+				<div class="widget" onclick="toggleWidget(this)">
+					<div class="questions">
+						<button class="expand-btn">
+							10. Is there a hostel facility on the campus?
+						</button>
+						<img
+							src="/src/assets/images/plus.svg"
+							alt="img"
+							class="toggleimg"
+						/>
+					</div>
+
+					<div class="content">
+						<hr />
+						<p>
+							CMRIT provides hostel accommodation on the campus, with separate
+							hostel facilities for boys and girls. Vigilant wardens and a team
+							of round the clock security staff ensure the safety of students
+							and maintain the security of the facilities.
+						</p>
+					</div>
+				</div>
+				<div class="widget" onclick="toggleWidget(this)">
+					<div class="questions">
+						<button class="expand-btn">
+							12. Who are the faculty at CMRIT?
+						</button>
+						<img
+							src="/src/assets/images/plus.svg"
+							alt="img"
+							class="toggleimg"
+						/>
+					</div>
+
+					<div class="content">
+						<hr />
+						<p>
+							CMRIT has a well-qualified and highly committed team of faculty
+							members. The teaching staff are strong in their academic
+							qualifications and will engage students in an interesting,
+							innovative and positive learning experience in the classroom.
+						</p>
+					</div>
+				</div>
+				<div class="widget" onclick="toggleWidget(this)">
+					<div class="questions">
+						<button class="expand-btn">
+							14. Which companies visit CMRIT for career placements?
+						</button>
+						<img
+							src="/src/assets/images/plus.svg"
+							alt="img"
+							class="toggleimg"
+						/>
+					</div>
+
+					<div class="content">
+						<hr />
+						<p>
+							A wide range of companies visit our campus for placements,
+							including core companies, product-based firms, service companies,
+							banking, and infrastructure companies. We also facilitate
+							international placements, offering our students global
+							opportunities. Here is the list of companies visiting CMR
+							Institute of Technology, Bangalore:
+						</p>
+
+						<div class="company-category">
+							<h3><strong>Product Software Companies:</strong></h3>
+							<ul>
+								<li>
+									Amazon, Cimpress, Epicor, Surewaves, Amadeus, Quinbay,
+									PhonePe, Google, Microsoft, Vymo, Juspay, Syncron, Zscaler,
+									HSBC, etc.
+								</li>
+							</ul>
+						</div>
+
+						<div class="company-category">
+							<h3><strong>Software Solution/Platform Providers:</strong></h3>
+							<ul>
+								<li>
+									Deloitte, PwC, EY, Ellucian, Epsilon, IHS Markit, Clarivate,
+									FIS Global, Infoedge, Q-Sys, etc.
+								</li>
+							</ul>
+						</div>
+
+						<div class="company-category">
+							<h3><strong>Captive Technology Centers:</strong></h3>
+							<ul>
+								<li>
+									KOCH, Eurofins, BOSCH, Light & Wonder, Hitachi Vantara, FIS,
+									etc.
+								</li>
+							</ul>
+						</div>
+
+						<div class="company-category">
+							<h3><strong>Software Service Companies:</strong></h3>
+							<ul>
+								<li>
+									IBM, HP, DELL, Oracle, TCS, Infosys, Cognizant, Capgemini,
+									Accenture, Wipro, HCL Tech, LTI, Mindtree, Hexaware,
+									GlobalLogic, Publicis, Sapient, Persistent, Visionet, Tata
+									Elxsi, etc.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="logos-section">
+			<p>Recognition</p>
+			<div class="logo-container">
+				<div class="logo-box">
+					<img src="/src/assets/images/vtu-logo.png" alt="vtu logo" />
+					<p class="logo-text">
+						Affiliated to Vishweshwaraya <br />
+						Technological University
+					</p>
+				</div>
+				<div class="logo-box">
+					<img src="/src/assets/images/aicte-logo.png" alt="aicte logo" />
+					<p class="logo-text">Approved By AICTE New Delhi</p>
+				</div>
+				<div class="logo-box">
+					<img
+						src="/src/assets/images/karnataka-state-gvt.png"
+						alt="kar logo"
+					/>
+					<p class="logo-text">Recognized By Gov of Karnataka</p>
+				</div>
+				<div class="logo-box">
+					<img src="/src/assets/images/nba-cse.png" alt="nba-cse logo" />
+					<p class="logo-text">Accredited By NBA (CSE, ECE, EEE)</p>
+				</div>
+				<div class="logo-box">
+					<img src="/src/assets/images/nba-cse.png" alt="nba-cse logo" />
+					<p class="logo-text">Accredited By NBA (ISE, CV, ME)</p>
+				</div>
+				<div class="logo-box">
+					<img src="/src/assets/images/NAAC-A.png" alt="naac logo" />
+					<p class="logo-text">Accredited by NAAC With A++</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="programmes">
+			<p>Programmes Offered</p>
+			<div class="program-container">
+				<div class="program-box box-1">
+					<p>UNDERGRADUATE PROGRAMMES</p>
+
+					<div class="program-contents box-1">
+						<a href="#" class="program-item"
+							>B.E | Computer Science & Engineering</a
+						>
+						<a href="#" class="program-item"
+							>B.E | Information Science & Engineering</a
+						>
+						<a href="#" class="program-item"
+							>B.E | Computer Science & Engineering (AI & ML)</a
+						>
+						<a href="#" class="program-item"
+							>B.E | Electronics & Communication Engineering</a
+						>
+						<a href="#" class="program-item"
+							>B.E | Computer Science & Engineering (DS)</a
+						>
+						<a href="#" class="program-item">
+							B.E | Electrical & Electronics Engineering (Closed from AY
+							2022-23)
+						</a>
+						<a href="#" class="program-item"
+							>B.E | Civil Engineering (Closed from AY 2022-23)</a
+						>
+						<a href="#" class="program-item"
+							>B.E | Artificial Intelligence and Machine Learning</a
+						>
+						<a href="#" class="program-item"
+							>B.E | Artificial Intelligence & Data Science</a
+						>
+						<a href="#" class="program-item"
+							>B.E | Mechanical Engineering (Closed from AY 2022-23)</a
+						>
+					</div>
+				</div>
+				<div class="program-box box-2">
+					<p>POSTGRADUATE PROGRAMMES</p>
+
+					<div class="program-contents box-2">
+						<a href="#" class="program-item"
+							>MCA | Master of Computer Applications</a
+						>
+						<a href="#" class="program-item"
+							>MBA | Master of Business Administration</a
+						>
+					</div>
+				</div>
+				<div class="program-box box-3">
+					<p>DOCTORAL PROGRAMMES</p>
+
+					<div class="program-contents box-3">
+						<a href="#" class="program-item">Ph.D | Engineering</a>
+						<a href="#" class="program-item">Ph.D | Business Administration</a>
+						<a href="#" class="program-item">Ph.D | Computer Applications</a>
+						<a href="#" class="program-item">Ph.D | Sciences</a>
+						<a href="#" class="program-item"
+							>Ph.D | Civil Engineering (Closed from AY 2022-23)
+						</a>
+					</div>
+				</div>
+				<div class="program-box box-4">
+					<p>VALUE ADDED PROGRAMMES</p>
+
+					<div class="program-contents box-4">
+						<div>
+							<img src="/src/assets/images/lifeskills.svg" alt="" />
+							<a href="#" class="program-item">Life Skills</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/sports.svg" alt="" />
+							<a href="#" class="program-item">Extracurricular activities</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/student_councils.svg" alt="" />
+							<a href="#" class="program-item">Student Councils</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/development.svg" alt="" />
+							<a href="#" class="program-item">skill development programmes</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/student_councils.svg" alt="" />
+							<a href="#" class="program-item">Industry connect</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/career_guidence.svg" alt="" />
+							<a href="#" class="program-item">Career guidence cell</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/internships.svg" alt="" />
+							<a href="#" class="program-item">Internships</a>
+						</div>
+					</div>
+				</div>
+				<div class="program-box box-5">
+					<p>PHYSICAL INFRASTRUCTURE</p>
+
+					<div class="program-contents box-5">
+						<div>
+							<img src="/src/assets/images/lifeskills.svg" alt="" />
+							<a href="#" class="program-item">State of the art library</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/hostel.svg" alt="" />
+							<a href="#" class="program-item">Quality boarding facility</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/sports.svg" alt="" />
+							<a href="#" class="program-item">Sports facilities</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/development.svg" alt="" />
+							<a href="#" class="program-item">Technology Equipped Labs</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/labs.svg" alt="" />
+							<a href="#" class="program-item">Technology Equipped Labs</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/auditorium.svg" alt="" />
+							<a href="#" class="program-item">Diwani Auditorium</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/av_halls.svg" alt="" />
+							<a href="#" class="program-item">Seven AV Halls</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/development.svg" alt="" />
+							<a href="#" class="program-item">11 Centers of Excellence</a>
+						</div>
+						<div>
+							<img src="/src/assets/images/classrooms.svg" alt="" />
+							<a href="#" class="program-item">ICT Enabled Class rooms</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="achievements">
+			<p>Honours & Achievements</p>
+			<div class="acc-container">
+				<div class="arrow left-arrow">&#8592;</div>
+				<div class="image-container">
+					<div class="image-box">
+						<img src="/src/assets/images/achievements/img1.jpg" alt="img1" />
+					</div>
+					<div class="image-box">
+						<img src="/src/assets/images/achievements/img2.jpg" alt="img2" />
+					</div>
+					<div class="image-box">
+						<img src="/src/assets/images/achievements/img3.jpg" alt="img3" />
+					</div>
+					<div class="image-box">
+						<img src="/src/assets/images/achievements/img4.jpg" alt="img4" />
+					</div>
+					<div class="image-box">
+						<img src="/src/assets/images/achievements/img5.jpg" alt="img5" />
+					</div>
+					<div class="image-box">
+						<img src="/src/assets/images/achievements/img6.jpg" alt="img6" />
+					</div>
+					<div class="image-box">
+						<img src="/src/assets/images/achievements/img7.jpg" alt="img7" />
+					</div>
+					<div class="image-box">
+						<img src="/src/assets/images/achievements/img8.jpg" alt="img8" />
+					</div>
+					<div class="image-box">
+						<img src="/src/assets/images/achievements/img9.jpg" alt="img9" />
+					</div>
+					<div class="image-box">
+						<img src="/src/assets/images/achievements/img10.jpg" alt="img10" />
+					</div>
+				</div>
+				<div class="arrow right-arrow">&#8594;</div>
+			</div>
+		</section>
+
+		<section class="placements">
+			<p>Placements & Recruiters</p>
+			<div class="placement-container">
+				<div class="card-1">
+					<h2>150+ diverse industry companies visit our college for a batch</h2>
+					<hr />
+					<h2>200+ placements with 7+ LPA CTC in the Year 2021-22</h2>
+					<hr />
+					<h2>30 LPA CTC is the Highest Salary in the Year 2021-22</h2>
+				</div>
+				<div class="card-2">
+					<h3>Recruiting Companies</h3>
+					<img
+						src="/src/assets/images/achievements/companies.jpg"
+						alt="companies logo"
+					/>
+				</div>
+				<button class="center-button">View All</button>
+			</div>
+		</section>
+		{{> footer }}
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script type="module" src="/src/sections/initial_page/initial.js"></script>
+	</body>
+</html>

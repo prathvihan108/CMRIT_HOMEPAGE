@@ -1,0 +1,398 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+}
+body {
+	font-family: "Roboto", sans-serif; /* Apply Roboto font globally */
+}
+
+:root {
+	--navbar-height: 80px;
+	--primary-color: #ad7116;
+
+	--secondary-color: #b2b0c0;
+	--btn-color: #00bcd4;
+	--hovered-color: grey;
+}
+
+.logo {
+	height: auto;
+	width: 100px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-height: fit-content;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding-top: var(--navbar-height);
+}
+
+.elementor-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.video-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: -1;
+}
+
+.nav-bar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	height: var(--navbar-height);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.3rem 1.8rem;
+	color: white;
+	background-color: var(--primary-color);
+}
+
+.menu-toggle {
+	display: none;
+	font-size: 2.5rem;
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.menu-items {
+	list-style: none;
+	display: flex;
+
+	gap: 1.2rem;
+}
+
+.menu-items li a {
+	text-decoration: none;
+	color: white;
+	transition: color 0.3s;
+}
+.menu-items li:hover {
+	background-color: var(--hovered-color);
+}
+
+.hover-card {
+	display: none;
+	position: fixed;
+
+	top: var(--navbar-height);
+	width: 100vw; /* Take the full width of the parent element */
+	background: #ffffff; /* Soft white background */
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+	padding: 1rem;
+	border-radius: 12px; /* Rounded corners */
+	z-index: 100;
+	transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth animation for appearance */
+	opacity: 0;
+	transform: translateY(-10px); /* Slide effect when appearing */
+}
+
+.hover-card.active {
+	display: block;
+	opacity: 1;
+	transform: translateY(0); /* Animates into place */
+}
+
+.hover-card .grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 1rem;
+
+	justify-content: center;
+
+	text-align: center;
+}
+
+.hover-card .card-link {
+	display: block;
+	text-decoration: none;
+	color: #333; /* Neutral dark text color */
+	font-weight: 500; /* Slightly bolder font */
+	background: var(--secondary-color); /* Subtle background for contrast */
+	padding: 0.5rem 0.75rem; /* Spacing inside the link */
+	border-radius: 8px; /* Rounded corners for links */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+	transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.hover-card .card-link:hover {
+	background: var(--hovered-color); /* Bright blue for hover */
+	color: #fff; /* White text for contrast */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* from js */
+.card-header {
+	text-align: center; /* Centers the title */
+	margin-bottom: 1rem; /* Adds some space below the title */
+}
+
+.card-title {
+	font-size: 1.5rem; /* Adjust font size */
+	font-weight: 600; /* Bold title */
+	color: #333; /* Dark color for the title */
+}
+
+/* 
+elementor section */
+
+.elementor-section {
+	width: 100%;
+	/* background-color: white; */
+	height: fit-content;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2.5rem;
+}
+
+.elementor-navbar {
+	width: 100%;
+
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.elementor-menu {
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.elementor-menu li {
+	display: flex;
+	align-items: center;
+}
+
+.elementor-menu button,
+.elementor-menu a {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: 0.4rem;
+	padding: 0.4rem 1rem;
+	font-size: 1rem;
+	text-decoration: none;
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	border-radius: 0.2rem;
+}
+
+.elementor-menu button:hover,
+.elementor-menu a:hover {
+	background-color: var(--hovered-color);
+}
+
+.about-section {
+	display: flex;
+	width: 100%;
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 1.5rem;
+	margin-top: 2.5rem;
+}
+/* Initially hide the iframe */
+#video-container {
+	display: none; /* Initially hidden */
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 0, 0.8);
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+	width: 560px;
+	height: 315px;
+	border: none;
+}
+
+.btn-video {
+	padding: 10px 20px;
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.btn-video:hover {
+	background-color: var(--hovered-color);
+}
+.read-more:hover {
+	background-color: var(--hovered-color);
+}
+
+.about-section div {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 0.2rem;
+}
+.about-section button {
+	padding: 0.4rem 1rem;
+	font-size: 1rem;
+	text-decoration: none;
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	border-radius: 0.2rem;
+}
+.about-section h1 {
+	color: white;
+	font-size: xx-large;
+	text-align: center;
+}
+.about-section p {
+	margin: 0 auto; /* Centers the <p> within the parent */
+	color: white;
+	width: 50%;
+	letter-spacing: 0.1rem;
+	line-height: 1.5; /* Adjust this value as needed */
+	text-align: center;
+}
+
+@media (max-width: 1200px) {
+	.menu-toggle {
+		display: block;
+	}
+
+	.menu-items {
+		display: none;
+		flex-direction: column;
+		height: 100vh;
+		width: 50vw;
+		gap: 0.8rem;
+		background-color: black;
+		position: absolute;
+		top: var(--navbar-height);
+		right: 0px;
+		padding: 10px;
+		border-radius: 0.8rem;
+	}
+
+	.menu-items li {
+		font-size: large;
+		background-color: var(--secondary-color);
+		border: 1px solid --secondary-color;
+		border-radius: 0.8rem;
+		padding: 10px;
+	}
+
+	.menu-items.active {
+		display: flex;
+	}
+
+	.hover-card {
+		width: 50vw;
+	}
+}
+
+@media (max-width: 994px) {
+	.elementor-navbar {
+		flex-wrap: wrap;
+	}
+	.elementor-menu {
+		flex-wrap: wrap;
+	}
+
+	html {
+		font-size: 14px;
+	}
+
+	.about-section h1 {
+		font-size: x-large;
+		margin-top: 3rem;
+	}
+
+	.about-section p {
+		margin: 0 auto; /* Centers the <p> within the parent */
+		color: white;
+		width: 80vw;
+		letter-spacing: 0.1rem;
+		line-height: 1; /* Adjust this value as needed */
+		text-align: center;
+	}
+}
+@media (max-width: 600px) {
+	html {
+		font-size: 12px;
+	}
+	header {
+		max-height: fit-content;
+		/* background-color: black; */
+	}
+	.about-section h1 {
+		font-size: x-large;
+		margin-top: 7rem;
+	}
+
+	.about-section p {
+		margin: 0 auto; /* Centers the <p> within the parent */
+		color: white;
+		width: 80vw;
+		letter-spacing: 0.1rem;
+		line-height: 1; /* Adjust this value as needed */
+		text-align: center;
+	}
+}
+@media (max-width: 400px) {
+	html {
+		font-size: 12px;
+	}
+	.about-section h1 {
+		font-size: medium;
+		margin-top: 3rem;
+	}
+
+	.about-section p {
+		margin: 0 auto; /* Centers the <p> within the parent */
+		color: white;
+		width: 90vw;
+		letter-spacing: 0.01rem;
+		line-height: 01; /* Adjust this value as needed */
+		text-align: center;
+	}
+}
