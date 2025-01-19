@@ -1,6 +1,7 @@
 // vite.config.js
 import { resolve } from "path";
 import handlebars from "vite-plugin-handlebars";
+
 export default {
 	server: {
 		host: true, // Allows access via your local IP address

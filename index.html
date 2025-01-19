@@ -7,14 +7,17 @@
 		<link rel="stylesheet" href="/src/styles.css" />
 	</head>
 	<body>
-		{{> header }}
+		<object type="text/html" data="/header.html"></object>
+
 		<section class="content-class" id="content-here">
 			<div id="content-placeholder" v-html="contentPlaceholder">
 				<!-- <button class="btn-content">click me</button> -->
 				hello
 			</div>
 		</section>
-		{{> footer }}
+		<footer>
+			<object type="text/html" data="/components/footer.html"></object>
+		</footer>
 
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script type="module" src="src/main.js"></script>

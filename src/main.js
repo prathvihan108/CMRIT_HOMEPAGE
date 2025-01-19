@@ -20,4 +20,4 @@ const content = document.querySelector(".content-class");
 // 	.catch((error) => console.error("Error:", error));
 
 // Hover effect and the link naviagation for the navbar
-window.location.href = "/src/sections/initial_page/initial.html";
+window.location.href = "/sections/initial_page/initial.html";

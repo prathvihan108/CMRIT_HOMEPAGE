@@ -10,6 +10,8 @@
 	},
 	"devDependencies": {
 		"vite": "^6.0.7",
-		"vite-plugin-handlebars": "^2.0.0"
+		"vite-plugin-handlebars": "^2.0.0",
+		"vite-plugin-html": "^3.2.2",
+		"vite-plugin-html-template": "^1.2.2"
 	}
 }
