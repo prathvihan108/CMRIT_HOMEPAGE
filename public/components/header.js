@@ -46,7 +46,7 @@ document.getElementById("video-container")?.addEventListener("click", (e) => {
 // Define card content for each menu item
 const cardContent = {
 	about: [
-		{ text: "About CMRGI", link: "#mission" },
+		{ text: "About CMRGI", link: "/sections/about/about_cmrgi/cmrgi.html" },
 		{ text: "About CMRIT", link: "#vision" },
 		{ text: "News", link: "#team" },
 		{ text: "Leadership", link: "#history" },
