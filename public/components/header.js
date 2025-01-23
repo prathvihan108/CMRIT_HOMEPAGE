@@ -47,7 +47,7 @@ document.getElementById("video-container")?.addEventListener("click", (e) => {
 const cardContent = {
 	about: [
 		{ text: "About CMRGI", link: "/sections/about/about_cmrgi/cmrgi.html" },
-		{ text: "About CMRIT", link: "#vision" },
+		{ text: "About CMRIT", link: "/sections/about/about_cmrit/cmrit.html" },
 		{ text: "News", link: "#team" },
 		{ text: "Leadership", link: "#history" },
 		{ text: "Faculty", link: "#leadership" },

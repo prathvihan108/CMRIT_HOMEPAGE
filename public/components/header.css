@@ -138,16 +138,18 @@ header {
 	color: #333; /* Neutral dark text color */
 	font-weight: 500; /* Slightly bolder font */
 	background: var(--secondary-color); /* Subtle background for contrast */
-	padding: 0.5rem 0.75rem; /* Spacing inside the link */
-	border-radius: 8px; /* Rounded corners for links */
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-	transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+	padding: 0.5rem 0.75rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hover-card .card-link:hover {
 	background: var(--hovered-color); /* Bright blue for hover */
 	color: #fff; /* White text for contrast */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	transform: translateY(-10px) scale(1.05);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* from js */
@@ -197,6 +199,7 @@ elementor section */
 .elementor-menu li {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .elementor-menu button,

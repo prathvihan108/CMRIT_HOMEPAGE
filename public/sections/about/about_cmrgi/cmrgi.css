@@ -18,15 +18,22 @@ body {
 	--hovered-color: grey;
 }
 
+h1 {
+	margin: 1rem;
+	font-size: xx-large;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 1rem;
+}
+
 .cmrgi {
 	width: 100%;
 	background-color: white;
 }
 .cmrgi p {
-	font-size: xx-large;
-	font-weight: 900;
 	text-align: center;
 	margin-top: 1rem;
+	font-size: xx-large;
 }
 
 .info-container {
