@@ -14,4 +14,8 @@ export default {
 			// templateFileExtension: "html",
 		}),
 	],
+	watch: {
+		// This will watch the public folder as well
+		ignored: ["!**/public/**"], // Watch everything in the 'public' folder
+	},
 };

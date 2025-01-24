@@ -50,7 +50,7 @@ const cardContent = {
 		{ text: "About CMRIT", link: "/sections/about/about_cmrit/cmrit.html" },
 
 		{ text: "Leadership", link: "/sections/about/ledership/leadership.html" },
-		{ text: "Faculty", link: "#leadership" },
+		{ text: "Faculty", link: "/sections/about/faculty/faculty.html" },
 	],
 	academics: [
 		{ text: "All Programs", link: "#programs" },
