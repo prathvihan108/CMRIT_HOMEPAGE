@@ -48,8 +48,8 @@ const cardContent = {
 	about: [
 		{ text: "About CMRGI", link: "/sections/about/about_cmrgi/cmrgi.html" },
 		{ text: "About CMRIT", link: "/sections/about/about_cmrit/cmrit.html" },
-		{ text: "News", link: "#team" },
-		{ text: "Leadership", link: "#history" },
+
+		{ text: "Leadership", link: "/sections/about/ledership/leadership.html" },
 		{ text: "Faculty", link: "#leadership" },
 	],
 	academics: [
