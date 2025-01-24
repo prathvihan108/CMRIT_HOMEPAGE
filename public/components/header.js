@@ -53,7 +53,10 @@ const cardContent = {
 		{ text: "Faculty", link: "/sections/about/faculty/faculty.html" },
 	],
 	academics: [
-		{ text: "All Programs", link: "#programs" },
+		{
+			text: "All Programs",
+			link: "/sections/academics/programmes/programmes.html",
+		},
 		{ text: "Courses", link: "#departments" },
 		{ text: "Departments", link: "#resources" },
 		{ text: "Scholarships", link: "#research" },
