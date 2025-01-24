@@ -59,8 +59,11 @@ const cardContent = {
 		},
 		{ text: "Courses", link: "#departments" },
 		{ text: "Departments", link: "#resources" },
-		{ text: "Scholarships", link: "#research" },
-		{ text: "CMRIT industry connect", link: "#workshops" },
+		{
+			text: "Scholarships",
+			link: "/sections/academics/scholarships/scholarships.html",
+		},
+
 		{ text: "CMRIT Center Of Exellence", link: "#seminars" },
 		{ text: "E-learning", link: "#library" },
 	],
