@@ -64,7 +64,10 @@ const cardContent = {
 			link: "/sections/academics/scholarships/scholarships.html",
 		},
 
-		{ text: "CMRIT Center Of Exellence", link: "#seminars" },
+		{
+			text: "CMRIT Center Of Exellence",
+			link: "/sections/academics/coe/coe.html",
+		},
 		{ text: "E-learning", link: "#library" },
 	],
 	admissions: [
