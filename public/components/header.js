@@ -74,7 +74,10 @@ const cardContent = {
 		},
 	],
 	admissions: [
-		{ text: "Undergraduate Admissions", link: "#apply" },
+		{
+			text: "Undergraduate Admissions",
+			link: "/sections/admissions/ug/ug.html",
+		},
 		{ text: "Postgraduate Admissions", link: "#eligibility" },
 		{ text: "Doctoral Programmes", link: "#fees" },
 		{ text: "Study in India", link: "#scholarships" },

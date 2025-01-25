@@ -13,7 +13,7 @@ body {
 	width: 100%;
 }
 body {
-	font-family: "Roboto", sans-serif; /* Apply Roboto font globally */
+	font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -105,21 +105,21 @@ header {
 	position: fixed;
 
 	top: var(--navbar-height);
-	width: 100vw; /* Take the full width of the parent element */
-	background: #ffffff; /* Soft white background */
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+	width: 100vw;
+	background: #ffffff;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 	padding: 1rem;
-	border-radius: 12px; /* Rounded corners */
+	border-radius: 12px;
 	z-index: 100;
-	transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth animation for appearance */
+	transition: opacity 0.3s ease, transform 0.3s ease;
 	opacity: 0;
-	transform: translateY(-10px); /* Slide effect when appearing */
+	transform: translateY(-10px);
 }
 
 .hover-card.active {
 	display: block;
 	opacity: 1;
-	transform: translateY(0); /* Animates into place */
+	transform: translateY(0);
 }
 
 .hover-card .grid {
@@ -135,9 +135,9 @@ header {
 .hover-card .card-link {
 	display: block;
 	text-decoration: none;
-	color: #333; /* Neutral dark text color */
-	font-weight: 500; /* Slightly bolder font */
-	background: var(--secondary-color); /* Subtle background for contrast */
+	color: #333;
+	font-weight: 500;
+	background: var(--secondary-color);
 	padding: 0.5rem 0.75rem;
 	border-radius: 8px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -145,23 +145,22 @@ header {
 }
 
 .hover-card .card-link:hover {
-	background: var(--hovered-color); /* Bright blue for hover */
-	color: #fff; /* White text for contrast */
+	background: var(--hovered-color);
+	color: #fff;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 	transform: translateY(-10px) scale(1.05);
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* from js */
 .card-header {
-	text-align: center; /* Centers the title */
-	margin-bottom: 1rem; /* Adds some space below the title */
+	text-align: center;
+	margin-bottom: 1rem;
 }
 
 .card-title {
-	font-size: 1.5rem; /* Adjust font size */
-	font-weight: 600; /* Bold title */
-	color: #333; /* Dark color for the title */
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #333;
 }
 
 /* 
@@ -169,7 +168,6 @@ elementor section */
 
 .elementor-section {
 	width: 100%;
-	/* background-color: white; */
 	height: fit-content;
 
 	display: flex;
@@ -235,7 +233,7 @@ elementor section */
 }
 /* Initially hide the iframe */
 #video-container {
-	display: none; /* Initially hidden */
+	display: none;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -289,11 +287,11 @@ iframe {
 	text-align: center;
 }
 .about-section p {
-	margin: 0 auto; /* Centers the <p> within the parent */
+	margin: 0 auto;
 	color: white;
 	width: 50%;
 	letter-spacing: 0.1rem;
-	line-height: 1.5; /* Adjust this value as needed */
+	line-height: 1.5;
 	text-align: center;
 }
 
@@ -308,18 +306,19 @@ iframe {
 		height: 100vh;
 		width: 50vw;
 		gap: 0.8rem;
-		background-color: black;
+		background-color: var(--secondary-color);
 		position: absolute;
 		top: var(--navbar-height);
 		right: 0px;
 		padding: 10px;
-		border-radius: 0.8rem;
+
+		border: 8x solid var(--primary-color);
 	}
 
 	.menu-items li {
 		font-size: large;
-		background-color: var(--secondary-color);
-		border: 1px solid --secondary-color;
+		background-color: var(--primary-color);
+
 		border-radius: 0.8rem;
 		padding: 10px;
 	}
@@ -351,11 +350,11 @@ iframe {
 	}
 
 	.about-section p {
-		margin: 0 auto; /* Centers the <p> within the parent */
+		margin: 0 auto;
 		color: white;
 		width: 80vw;
 		letter-spacing: 0.1rem;
-		line-height: 1; /* Adjust this value as needed */
+		line-height: 1;
 		text-align: center;
 	}
 }
@@ -365,7 +364,6 @@ iframe {
 	}
 	header {
 		max-height: fit-content;
-		/* background-color: black; */
 	}
 	.about-section h1 {
 		font-size: x-large;
@@ -373,11 +371,11 @@ iframe {
 	}
 
 	.about-section p {
-		margin: 0 auto; /* Centers the <p> within the parent */
+		margin: 0 auto;
 		color: white;
 		width: 80vw;
 		letter-spacing: 0.1rem;
-		line-height: 1; /* Adjust this value as needed */
+		line-height: 1;
 		text-align: center;
 	}
 }
@@ -391,11 +389,11 @@ iframe {
 	}
 
 	.about-section p {
-		margin: 0 auto; /* Centers the <p> within the parent */
+		margin: 0 auto;
 		color: white;
 		width: 90vw;
 		letter-spacing: 0.01rem;
-		line-height: 01; /* Adjust this value as needed */
+		line-height: 01;
 		text-align: center;
 	}
 }
