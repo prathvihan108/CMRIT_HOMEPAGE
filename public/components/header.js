@@ -78,9 +78,15 @@ const cardContent = {
 			text: "Undergraduate Admissions",
 			link: "/sections/admissions/ug/ug.html",
 		},
-		{ text: "Postgraduate Admissions", link: "#eligibility" },
-		{ text: "Doctoral Programmes", link: "#fees" },
-		{ text: "Study in India", link: "#scholarships" },
+		{
+			text: "Postgraduate Admissions",
+			link: "/sections/admissions/pg/pg.html",
+		},
+		{ text: "Doctoral Programmes", link: "/sections/admissions/dp/dp.html" },
+		{
+			text: "Study in India",
+			link: "/sections/admissions/study_in_india/si.html",
+		},
 	],
 	campus: [
 		{ text: "Library", link: "#facilities" },

@@ -44,11 +44,11 @@ h1 {
 	display: block;
 }
 
-.ug {
+.si {
 	width: 100%;
 	background-color: white;
 }
-.ug p {
+.si p {
 	text-align: center;
 	margin-top: 1rem;
 	font-size: xx-large;
@@ -78,63 +78,14 @@ h1 {
 .info-box1 ul li {
 	font-size: large;
 	margin: 0.8rem;
-}
-
-h2 {
-}
-.info-box2 {
-	width: 90%;
-	margin: 1rem;
-	background-color: var(--secondary-color);
-	padding: 1.5rem;
-	text-align: left;
-	border: 1px solid var(--secondary-color);
-	border-radius: 0.8rem;
-}
-.info-box2 p {
-	font-size: large;
 	word-wrap: break-word;
 }
 
-.info-box3 {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+h2 {
 	justify-content: center;
-	align-content: center;
-	text-align: left;
-	/* width: 90%; */
-	background-color: var(--secondary-color);
-	padding: 1.5rem;
-	gap: 1.5rem;
-	border: 1px solid var(--secondary-color);
-	border-radius: 0.8rem;
-	margin: 1rem;
-}
-.info-box3 h2 {
-	grid-column: span 3;
-	align-self: flex-start;
-	justify-self: left;
-}
-.info-box3 ul:first-of-type {
-	grid-column: span 3;
-	text-align: left;
-	font-size: large;
-}
-
-.info-box3 h3:first-of-type {
-	grid-column: span 3;
-	align-self: flex-start;
-	justify-self: left;
-	text-align: left;
-}
-.info-box3 p {
-	grid-column: span 3;
-	text-align: left;
-	font-size: medium;
 }
 
 @media (max-width: 768px) {
-	/* .info-box3{} */
 }
 
 /* contact */
