@@ -89,8 +89,8 @@ const cardContent = {
 		},
 	],
 	campus: [
-		{ text: "Library", link: "#facilities" },
-		{ text: "Hostel", link: "#events" },
+		{ text: "Library", link: "http://203.201.63.46/library/" },
+		{ text: "Hostel", link: "/sections/campus/hostel/hostel.html" },
 		{ text: "Sports", link: "#clubs" },
 		{ text: "Life Skills", link: "#dining" },
 		{ text: "Extra Curricular Activities", link: "#accommodation" },
