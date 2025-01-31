@@ -86,6 +86,10 @@ h1 {
 	margin-top: 0.5rem;
 }
 
+.info-box1 ul li {
+	margin-top: 0.8rem;
+}
+
 .info-box2 {
 	background-color: var(--secondary-color);
 	padding: 1.5rem;

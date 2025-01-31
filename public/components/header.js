@@ -111,10 +111,12 @@ const cardContent = {
 		},
 	],
 	placements: [
-		{ text: "Vision and goals", link: "#companies" },
 		{ text: "Career Guidence", link: "/sections/plcements/cg/cg.html" },
-		{ text: "Career Fairs", link: "#career-fairs" },
-		{ text: "Student Programmes", link: "#success-stories" },
+
+		{
+			text: "Student Programmes",
+			link: "/sections/plcements/sp/sp.html",
+		},
 		{ text: "College Resources", link: "#recruitment" },
 		{ text: "Campus Hiring", link: "#workshops" },
 	],
