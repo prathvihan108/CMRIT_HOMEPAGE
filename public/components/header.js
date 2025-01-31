@@ -91,18 +91,28 @@ const cardContent = {
 	campus: [
 		{ text: "Library", link: "http://203.201.63.46/library/" },
 		{ text: "Hostel", link: "/sections/campus/hostel/hostel.html" },
-		{ text: "Sports", link: "#clubs" },
-		{ text: "Life Skills", link: "#dining" },
-		{ text: "Extra Curricular Activities", link: "#accommodation" },
-		{ text: "Student Clubs", link: "#sports" },
-		{ text: "Cultura", link: "#transport" },
-		{ text: "Security", link: "#security" },
-		{ text: "Health Services", link: "#health" },
-		{ text: "Alumni Meetups", link: "#alumni" },
+		{ text: "Sports", link: "/sections/campus/sports/sports.html" },
+		{
+			text: "Life Skills",
+			link: "/sections/campus/lifeskills/lifeskills.html",
+		},
+		{
+			text: "Extra Curricular Activities",
+			link: "/sections/campus/eca/eca.html",
+		},
+		{
+			text: "Student Clubs",
+			link: "https://sites.google.com/cmrit.ac.in/cmritstudentclubs/events",
+		},
+		{ text: "Cultura", link: "https://cmritcultura.com/" },
+		{
+			text: "Competation participation policy",
+			link: "https://sites.google.com/cmrit.ac.in/tcem/home",
+		},
 	],
 	placements: [
 		{ text: "Vision and goals", link: "#companies" },
-		{ text: "Career Guidence", link: "#internships" },
+		{ text: "Career Guidence", link: "/sections/plcements/cg/cg.html" },
 		{ text: "Career Fairs", link: "#career-fairs" },
 		{ text: "Student Programmes", link: "#success-stories" },
 		{ text: "College Resources", link: "#recruitment" },
