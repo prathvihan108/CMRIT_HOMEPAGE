@@ -128,7 +128,7 @@ const cardContent = {
 		{ text: "Internships", link: "#entrepreneurship" },
 		{ text: "IQAC", link: "#innovation" },
 		{ text: "EE & C", link: "#cultural" },
-		{ text: "IIC", link: "#sports-cell" },
+		{ text: "IIC", link: "/sections/cells/iic/iic.html" },
 		{ text: "AICTE", link: "#technical" },
 		{ text: "Direct varify system", link: "#literary" },
 		{ text: "Academic Enhancement cells", link: "#environmental" },

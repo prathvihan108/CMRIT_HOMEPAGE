@@ -11,7 +11,7 @@ fetch("/components/header.html")
 		headerScript.onload = () => {
 			console.log("Header script loaded successfully.");
 			//scroll to the section
-			const targetElement = document.getElementById("contact-id");
+			const targetElement = document.getElementById("btn-id");
 
 			if (targetElement) {
 				targetElement.scrollIntoView({ behavior: "smooth" });
