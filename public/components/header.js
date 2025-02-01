@@ -119,6 +119,10 @@ const cardContent = {
 		},
 		{ text: "College Resources", link: "/sections/plcements/cr/cr.html" },
 		{ text: "Campus Hiring", link: "/sections/plcements/ch/ch.html" },
+		{
+			text: "Contact",
+			link: "/sections/plcements/contact/contact.html",
+		},
 	],
 	cells: [
 		{ text: "Internships", link: "#entrepreneurship" },
