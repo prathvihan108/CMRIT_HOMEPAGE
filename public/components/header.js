@@ -125,18 +125,45 @@ const cardContent = {
 		},
 	],
 	cells: [
-		{ text: "Internships", link: "#entrepreneurship" },
-		{ text: "IQAC", link: "#innovation" },
-		{ text: "EE & C", link: "#cultural" },
+		{
+			text: "Internships",
+			link: "https://sites.google.com/cmrit.ac.in/internshipcell",
+		},
+		{
+			text: "IQAC",
+			link: "https://sites.google.com/cmrit.ac.in/internalqualityassurancecell/home",
+		},
+		{
+			text: "EE & C",
+			link: "https://sites.google.com/cmrit.ac.in/eec-cell/home",
+		},
 		{ text: "IIC", link: "/sections/cells/iic/iic.html" },
-		{ text: "AICTE", link: "#technical" },
-		{ text: "Direct varify system", link: "#literary" },
-		{ text: "Academic Enhancement cells", link: "#environmental" },
-		{ text: "Women Cell", link: "#community" },
-		{ text: "CMRIT CICC", link: "#health-wellness" },
-		{ text: "SC-ST & OBC Cell", link: "#art-design" },
-		{ text: "EDC Cell", link: "#art-design" },
-		{ text: "FOSS Cell", link: "#art-design" },
+		{ text: "AICTE", link: "/sections/cells/aicte/aicte.html" },
+
+		{
+			text: "Academic Enhancement cells",
+			link: "https://sites.google.com/cmrit.ac.in/academic-enhancement-cell",
+		},
+		{
+			text: "Women Cell",
+			link: "https://sites.google.com/view/woman-cell/homey",
+		},
+		{
+			text: "CMRIT CICC",
+			link: "https://www.cmrit.ac.in/college-internal-complaints-committee-ccic/",
+		},
+		{
+			text: "SC-ST & OBC Cell",
+			link: "https://sites.google.com/cmrit.ac.in/sc-st-obc-cell/home",
+		},
+		{
+			text: "EDC Cell",
+			link: "https://sites.google.com/cmrit.ac.in/edc-cell/home",
+		},
+		{
+			text: "FOSS Cell",
+			link: "https://sites.google.com/cmrit.ac.in/fosscell-cmrit",
+		},
 	],
 	rnd: [
 		{
