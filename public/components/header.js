@@ -183,7 +183,7 @@ const cardContent = {
 		{ text: "Video Gallery", link: "/sections/undesigned/ud.html" },
 	],
 
-	nirf: [{ text: "Rankings", link: "https://www.cmrit.ac.in/nirf" }],
+	nirf: [{ text: "Rankings", link: "/sections/nirf/nirf.html" }],
 };
 
 // Add hover listeners

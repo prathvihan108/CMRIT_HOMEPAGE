@@ -17,28 +17,62 @@ body {
 	--btn-color: #00bcd4;
 	--hovered-color: grey;
 }
+/* General Section Styling */
+.nirf {
+	background-color: var(--secondary-color);
+	padding: 30px;
+	border-radius: 8px;
+	max-width: 800px;
+	margin: 40px auto;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
-h1 {
-	margin: 1rem;
-	font-size: xx-large;
-	font-weight: 900;
+.nirf h1 {
 	text-align: center;
-	margin-top: 1rem;
-}
-.img-class {
-	width: 100%;
-
-	border: 1px solid white;
-	border-radius: 0.5rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	font-size: 28px;
+	color: #333;
+	margin-bottom: 20px;
+	font-family: "Arial", sans-serif;
 }
 
-.img-class img {
-	width: 200px;
-	object-fit: cover;
-	border: 1px solid white;
-	border-radius: 0.5rem;
-	/* display: block; */
+.nirf div {
+	margin-bottom: 15px;
+}
+
+/* Styling for Links */
+.nirf a {
+	display: inline-block;
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
+	padding: 10px 20px;
+	background-color: var(--primary-color);
+	border-radius: 5px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nirf a:hover {
+	background-color: var(--hovered-color);
+	color: #fff;
+}
+
+.nirf a:focus {
+	outline: none;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+	.nirf {
+		padding: 20px;
+	}
+
+	.nirf h1 {
+		font-size: 24px;
+	}
+
+	.nirf a {
+		font-size: 16px;
+		padding: 8px 16px;
+	}
 }
