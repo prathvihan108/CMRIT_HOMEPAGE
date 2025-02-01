@@ -44,12 +44,12 @@ h1 {
 	display: block;
 }
 
-.lifeskills {
+.ch {
 	width: 100%;
 	background-color: white;
 }
 
-.lifeskills p {
+.ch p {
 	text-align: center;
 	margin-top: 1rem;
 	font-size: xx-large;
@@ -57,7 +57,7 @@ h1 {
 
 .info-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	justify-content: center;
 
 	justify-items: center;
@@ -79,6 +79,13 @@ h1 {
 	gap: 1.5rem;
 	text-align: left;
 }
+.info-box1 ol {
+	margin-left: 1rem;
+}
+.info-box1 ol li {
+	margin-top: 0.8rem;
+	font-size: large;
+}
 
 .info-box1 p {
 	font-size: large;
@@ -89,14 +96,32 @@ h1 {
 .info-box2 {
 	background-color: var(--secondary-color);
 	padding: 1.5rem;
+	width: 80%;
 
 	border: 1px solid var(--secondary-color);
 	border-radius: 0.8rem;
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+
 	margin: 1rem;
 	gap: 1.5rem;
 	text-align: left;
+}
+
+/* .info-box2 h2 {
+	grid-column: span 2;
+} */
+.info-box2 > div {
+	width: 100%;
+	width: 100%;
+}
+.info-box2 > div img {
+	object-fit: fill;
+	width: 100%;
+	width: 100%;
 }
 
 .info-box2 p {
@@ -108,7 +133,6 @@ h1 {
 .info-box3 {
 	background-color: var(--secondary-color);
 	padding: 1.5rem;
-	grid-column: span 2;
 
 	border: 1px solid var(--secondary-color);
 	border-radius: 0.8rem;
@@ -125,27 +149,39 @@ h1 {
 	margin-top: 0.5rem;
 }
 
-.info-box3 ul li {
+.info-box3 ol li {
 	font-size: large;
 }
-
-.info-box4 {
-	background-color: var(--secondary-color);
-	padding: 1.5rem;
-	grid-column: span 2;
-
-	border: 1px solid var(--secondary-color);
-	border-radius: 0.8rem;
-	display: flex;
-	flex-direction: column;
-	margin: 1rem;
-	gap: 1.5rem;
-	text-align: left;
+.recruiters-table {
+	width: 100%;
+	margin: 20px auto;
+	border-collapse: collapse;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.info-box4 p {
-	font-size: medium;
-	text-align: left;
+.recruiters-table th,
+.recruiters-table td {
+	padding: 12px 20px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+
+.recruiters-table th {
+	background-color: #4caf50;
+	color: white;
+}
+
+.recruiters-table td {
+	background-color: #f9f9f9;
+}
+
+.recruiters-table tr:nth-child(even) td {
+	background-color: #f2f2f2;
+}
+
+.recruiters-table tr:hover td {
+	background-color: #f1f1f1;
 }
 
 @media (max-width: 768px) {
@@ -155,11 +191,7 @@ h1 {
 	h4 {
 		font-size: large;
 	}
-	.info-container {
+	.info-box2 {
 		grid-template-columns: 1fr;
-	}
-	.info-box3,
-	.info-box4 {
-		grid-column: auto;
 	}
 }
