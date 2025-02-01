@@ -43,14 +43,9 @@ h1 {
 	display: block;
 }
 
-.leadership {
+.tsn {
 	width: 100%;
 	background-color: white;
-}
-.leadership p {
-	text-align: center;
-	margin-top: 1rem;
-	font-size: xx-large;
 }
 
 .info-container {
@@ -61,49 +56,70 @@ h1 {
 	align-items: center;
 	gap: 1rem;
 }
-.info-box {
-	background-color: var(--secondary-color);
-	padding: 0.5rem;
-	margin: 1rem;
-	border: 1px solid var(--secondary-color);
-	border-radius: 0.8rem;
-	display: grid;
-	grid-template-rows: auto auto;
-	grid-template-columns: auto auto;
-	gap: 1rem;
+.heading {
 	text-align: center;
+	margin-top: 1rem;
+	font-size: xx-large;
 }
-
-.info-box h2 {
-	grid-column: span 2;
-	align-self: center;
-	justify-self: center;
-}
-
-.info-box img {
-	width: 100%; /* Take the full width of the grid cell */
-	height: 100%; /* Take the full height of the grid cell */
+/* Card Container */
+.info-box {
+	display: flex;
+	background-color: var(--secondary-color);
 	border-radius: 0.8rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	width: 90%;
+	margin: 1rem auto;
+	padding: 0.8rem;
+	overflow: hidden;
+	transition: transform 0.3s ease-in-out;
+}
+
+.info-box:hover {
+	transform: translateY(-10px); /* Lift the card slightly on hover */
+}
+
+/* Image Style */
+.info-img img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
 	object-fit: cover;
+	margin-right: 20px;
 }
 
-.info-box p {
-	grid-column: 2;
-
-	text-align: left;
-	align-self: left;
-
-	font-size: larger;
-
-	overflow: auto;
+/* Content Section */
+.info-content {
+	flex: 1;
 }
 
-@media (max-width: 768px) {
+h2 {
+	font-size: 20px;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 16px;
+	color: #666;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: large;
+	color: black;
+	line-height: 1.6;
+	text-align: justify;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
 	.info-box {
-		grid-template-columns: 1fr;
+		flex-direction: column;
+		align-items: center;
 	}
-	.info-box img {
-		grid-column: span 2;
-		width: 100%;
+
+	.info-img img {
+		margin-bottom: 15px;
 	}
 }

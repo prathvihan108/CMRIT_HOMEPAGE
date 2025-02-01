@@ -171,7 +171,9 @@ const cardContent = {
 			link: "https://sites.google.com/cmrit.ac.in/research-committee",
 		},
 	],
-	testimonials: [{ text: "Know More", link: "#student-stories" }],
+	testimonials: [
+		{ text: "Alumini", link: "/sections/testinomials/tsn/tsn.html" },
+	],
 	media: [
 		{ text: "News", link: "#news" },
 		{ text: "Events", link: "#events" },
@@ -184,7 +186,7 @@ const cardContent = {
 		{ text: "Campaigns", link: "#campaigns" },
 		{ text: "Media Coverage", link: "#media-coverage" },
 	],
-	blog: [{ text: "Visit Blogs", link: "https://www.cmrit.ac.in/blog" }],
+
 	nirf: [
 		{ text: "Rankings", link: "#rankings" },
 		{ text: "Criteria", link: "#criteria" },
