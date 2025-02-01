@@ -175,30 +175,15 @@ const cardContent = {
 		{ text: "Alumini", link: "/sections/testinomials/tsn/tsn.html" },
 	],
 	media: [
-		{ text: "News", link: "#news" },
-		{ text: "Events", link: "#events" },
-		{ text: "Social Media", link: "#social-media" },
-		{ text: "Press Releases", link: "#press-releases" },
-		{ text: "Photo Gallery", link: "#photo-gallery" },
-		{ text: "Video Gallery", link: "#video-gallery" },
-		{ text: "Newsletters", link: "#newsletters" },
-		{ text: "Blogs", link: "#blogs" },
-		{ text: "Campaigns", link: "#campaigns" },
-		{ text: "Media Coverage", link: "#media-coverage" },
+		{ text: "News", link: "/sections/undesigned/ud.html" },
+		{ text: "Events", link: "/sections/undesigned/ud.html" },
+		{ text: "Social Media", link: "/sections/undesigned/ud.html" },
+		{ text: "Press Releases", link: "/sections/undesigned/ud.htmls" },
+		{ text: "Photo Gallery", link: "/sections/undesigned/ud.html" },
+		{ text: "Video Gallery", link: "/sections/undesigned/ud.html" },
 	],
 
-	nirf: [
-		{ text: "Rankings", link: "#rankings" },
-		{ text: "Criteria", link: "#criteria" },
-		{ text: "Reports", link: "#reports" },
-		{ text: "Achievements", link: "#achievements" },
-		{ text: "Statistics", link: "#statistics" },
-		{ text: "Institution Details", link: "#details" },
-		{ text: "Goals", link: "#goals" },
-		{ text: "Comparisons", link: "#comparisons" },
-		{ text: "Feedback", link: "#feedback" },
-		{ text: "Future Plans", link: "#future-plans" },
-	],
+	nirf: [{ text: "Rankings", link: "https://www.cmrit.ac.in/nirf" }],
 };
 
 // Add hover listeners
