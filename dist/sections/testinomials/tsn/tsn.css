@@ -1,0 +1,125 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	--navbar-height: 80px;
+	--primary-color: #ad7116;
+	--secondary-color: #b2b0c0;
+	--btn-color: #00bcd4;
+	--hovered-color: grey;
+}
+
+h1 {
+	margin: 1rem;
+	font-size: xx-large;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 1rem;
+}
+.img-class {
+	width: 100%;
+
+	border: 1px solid white;
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-class img {
+	width: 90%;
+	object-fit: cover;
+	border: 1px solid white;
+	border-radius: 0.5rem;
+	display: block;
+}
+
+.tsn {
+	width: 100%;
+	background-color: white;
+}
+
+.info-container {
+	display: flex;
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.heading {
+	text-align: center;
+	margin-top: 1rem;
+	font-size: xx-large;
+}
+/* Card Container */
+.info-box {
+	display: flex;
+	background-color: var(--secondary-color);
+	border-radius: 0.8rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	width: 90%;
+	margin: 1rem auto;
+	padding: 0.8rem;
+	overflow: hidden;
+	transition: transform 0.3s ease-in-out;
+}
+
+.info-box:hover {
+	transform: translateY(-10px); /* Lift the card slightly on hover */
+}
+
+/* Image Style */
+.info-img img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 20px;
+}
+
+/* Content Section */
+.info-content {
+	flex: 1;
+}
+
+h2 {
+	font-size: 20px;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 16px;
+	color: #666;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: large;
+	color: black;
+	line-height: 1.6;
+	text-align: justify;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+	.info-box {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.info-img img {
+		margin-bottom: 15px;
+	}
+}

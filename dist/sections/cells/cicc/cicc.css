@@ -1,0 +1,92 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	--navbar-height: 80px;
+	--primary-color: #ad7116;
+	--secondary-color: #b2b0c0;
+	--btn-color: #00bcd4;
+	--hovered-color: grey;
+}
+
+h1 {
+	margin: 1rem;
+	font-size: xx-large;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.img-class {
+	width: 100%;
+
+	border: 1px solid white;
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-class img {
+	width: 90%;
+	object-fit: cover;
+	border: 1px solid white;
+	border-radius: 0.5rem;
+	display: block;
+}
+
+.cicc {
+	width: 100%;
+	background-color: white;
+}
+
+.cicc p {
+	text-align: center;
+	margin-top: 1rem;
+	font-size: xx-large;
+}
+
+.info-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+
+	justify-items: center;
+
+	padding: 0.5rem;
+
+	margin: 1rem auto;
+	gap: 1rem;
+}
+
+.info-box1 {
+	background-color: var(--secondary-color);
+	border-radius: 0.8rem;
+	margin: 1rem;
+	text-align: left;
+	padding: 0.8rem;
+	border-radius: 8px;
+	width: fit-content;
+	font-family: Arial, sans-serif;
+}
+
+.info-box1 p {
+	font-size: large;
+	text-align: left;
+}
+.info-box1 ul {
+	padding: 1rem;
+}
+.info-box1 ul li {
+	font-size: large;
+	text-align: left;
+}

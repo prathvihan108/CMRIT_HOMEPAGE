@@ -103,3 +103,17 @@ rightArrow.addEventListener("touchstart", () => {
 		behavior: "smooth",
 	});
 });
+
+//redirection for the read more button
+const readMore = document.querySelectorAll(".readmore");
+readMore.forEach(function (button) {
+	button.addEventListener("click", function () {
+		window.location.href = "/sections/about/ledership/leadership.html";
+	});
+});
+
+const viewBtn = document.querySelector("#view-btn");
+
+viewBtn.addEventListener("click", () => {
+	window.location.href = "/sections/plcements/ch/ch.html";
+});

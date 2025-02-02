@@ -46,60 +46,124 @@ document.getElementById("video-container")?.addEventListener("click", (e) => {
 // Define card content for each menu item
 const cardContent = {
 	about: [
-		{ text: "About CMRGI", link: "#mission" },
-		{ text: "About CMRIT", link: "#vision" },
-		{ text: "News", link: "#team" },
-		{ text: "Leadership", link: "#history" },
-		{ text: "Faculty", link: "#leadership" },
+		{ text: "About CMRGI", link: "/sections/about/about_cmrgi/cmrgi.html" },
+		{ text: "About CMRIT", link: "/sections/about/about_cmrit/cmrit.html" },
+
+		{ text: "Leadership", link: "/sections/about/ledership/leadership.html" },
+		{ text: "Faculty", link: "/sections/about/faculty/faculty.html" },
 	],
 	academics: [
-		{ text: "All Programs", link: "#programs" },
+		{
+			text: "All Programs",
+			link: "/sections/academics/programmes/programmes.html",
+		},
 		{ text: "Courses", link: "#departments" },
 		{ text: "Departments", link: "#resources" },
-		{ text: "Scholarships", link: "#research" },
-		{ text: "CMRIT industry connect", link: "#workshops" },
-		{ text: "CMRIT Center Of Exellence", link: "#seminars" },
-		{ text: "E-learning", link: "#library" },
+		{
+			text: "Scholarships",
+			link: "/sections/academics/scholarships/scholarships.html",
+		},
+
+		{
+			text: "CMRIT Center Of Exellence",
+			link: "/sections/academics/coe/coe.html",
+		},
+		{
+			text: "E-learning",
+			link: "https://sites.google.com/cmrit.ac.in/covid-19response/details/remote-classroom",
+		},
 	],
 	admissions: [
-		{ text: "Undergraduate Admissions", link: "#apply" },
-		{ text: "Postgraduate Admissions", link: "#eligibility" },
-		{ text: "Doctoral Programmes", link: "#fees" },
-		{ text: "Study in India", link: "#scholarships" },
+		{
+			text: "Undergraduate Admissions",
+			link: "/sections/admissions/ug/ug.html",
+		},
+		{
+			text: "Postgraduate Admissions",
+			link: "/sections/admissions/pg/pg.html",
+		},
+		{ text: "Doctoral Programmes", link: "/sections/admissions/dp/dp.html" },
+		{
+			text: "Study in India",
+			link: "/sections/admissions/study_in_india/si.html",
+		},
 	],
 	campus: [
-		{ text: "Library", link: "#facilities" },
-		{ text: "Hostel", link: "#events" },
-		{ text: "Sports", link: "#clubs" },
-		{ text: "Life Skills", link: "#dining" },
-		{ text: "Extra Curricular Activities", link: "#accommodation" },
-		{ text: "Student Clubs", link: "#sports" },
-		{ text: "Cultura", link: "#transport" },
-		{ text: "Security", link: "#security" },
-		{ text: "Health Services", link: "#health" },
-		{ text: "Alumni Meetups", link: "#alumni" },
+		{ text: "Library", link: "http://203.201.63.46/library/" },
+		{ text: "Hostel", link: "/sections/campus/hostel/hostel.html" },
+		{ text: "Sports", link: "/sections/campus/sports/sports.html" },
+		{
+			text: "Life Skills",
+			link: "/sections/campus/lifeskills/lifeskills.html",
+		},
+		{
+			text: "Extra Curricular Activities",
+			link: "/sections/campus/eca/eca.html",
+		},
+		{
+			text: "Student Clubs",
+			link: "https://sites.google.com/cmrit.ac.in/cmritstudentclubs/events",
+		},
+		{ text: "Cultura", link: "https://cmritcultura.com/" },
+		{
+			text: "Competation participation policy",
+			link: "https://sites.google.com/cmrit.ac.in/tcem/home",
+		},
 	],
 	placements: [
-		{ text: "Vision and goals", link: "#companies" },
-		{ text: "Career Guidence", link: "#internships" },
-		{ text: "Career Fairs", link: "#career-fairs" },
-		{ text: "Student Programmes", link: "#success-stories" },
-		{ text: "College Resources", link: "#recruitment" },
-		{ text: "Campus Hiring", link: "#workshops" },
+		{ text: "Career Guidence", link: "/sections/plcements/cg/cg.html" },
+
+		{
+			text: "Student Programmes",
+			link: "/sections/plcements/sp/sp.html",
+		},
+		{ text: "College Resources", link: "/sections/plcements/cr/cr.html" },
+		{ text: "Campus Hiring", link: "/sections/plcements/ch/ch.html" },
+		{
+			text: "Contact",
+			link: "/sections/plcements/contact/contact.html",
+		},
 	],
 	cells: [
-		{ text: "Internships", link: "#entrepreneurship" },
-		{ text: "IQAC", link: "#innovation" },
-		{ text: "EE & C", link: "#cultural" },
-		{ text: "IIC", link: "#sports-cell" },
-		{ text: "AICTE", link: "#technical" },
-		{ text: "Direct varify system", link: "#literary" },
-		{ text: "Academic Enhancement cells", link: "#environmental" },
-		{ text: "Women Cell", link: "#community" },
-		{ text: "CMRIT CICC", link: "#health-wellness" },
-		{ text: "SC-ST & OBC Cell", link: "#art-design" },
-		{ text: "EDC Cell", link: "#art-design" },
-		{ text: "FOSS Cell", link: "#art-design" },
+		{
+			text: "Internships",
+			link: "https://sites.google.com/cmrit.ac.in/internshipcell",
+		},
+		{
+			text: "IQAC",
+			link: "https://sites.google.com/cmrit.ac.in/internalqualityassurancecell/home",
+		},
+		{
+			text: "EE & C",
+			link: "https://sites.google.com/cmrit.ac.in/eec-cell/home",
+		},
+		{ text: "IIC", link: "/sections/cells/iic/iic.html" },
+		{ text: "AICTE", link: "/sections/cells/aicte/aicte.html" },
+
+		{
+			text: "Academic Enhancement cells",
+			link: "https://sites.google.com/cmrit.ac.in/academic-enhancement-cell",
+		},
+		{
+			text: "Women Cell",
+			link: "https://sites.google.com/view/woman-cell/homey",
+		},
+		{
+			text: "CMRIT CICC",
+			link: "/sections/cells/cicc/cicc.html",
+		},
+		{
+			text: "SC-ST & OBC Cell",
+			link: "https://sites.google.com/cmrit.ac.in/sc-st-obc-cell/home",
+		},
+		{
+			text: "EDC Cell",
+			link: "https://sites.google.com/cmrit.ac.in/edc-cell/home",
+		},
+		{
+			text: "FOSS Cell",
+			link: "https://sites.google.com/cmrit.ac.in/fosscell-cmrit",
+		},
 	],
 	rnd: [
 		{
@@ -107,32 +171,19 @@ const cardContent = {
 			link: "https://sites.google.com/cmrit.ac.in/research-committee",
 		},
 	],
-	testimonials: [{ text: "Know More", link: "#student-stories" }],
+	testimonials: [
+		{ text: "Alumini", link: "/sections/testinomials/tsn/tsn.html" },
+	],
 	media: [
-		{ text: "News", link: "#news" },
-		{ text: "Events", link: "#events" },
-		{ text: "Social Media", link: "#social-media" },
-		{ text: "Press Releases", link: "#press-releases" },
-		{ text: "Photo Gallery", link: "#photo-gallery" },
-		{ text: "Video Gallery", link: "#video-gallery" },
-		{ text: "Newsletters", link: "#newsletters" },
-		{ text: "Blogs", link: "#blogs" },
-		{ text: "Campaigns", link: "#campaigns" },
-		{ text: "Media Coverage", link: "#media-coverage" },
+		{ text: "News", link: "/sections/undesigned/ud.html" },
+		{ text: "Events", link: "/sections/undesigned/ud.html" },
+		{ text: "Social Media", link: "/sections/undesigned/ud.html" },
+		{ text: "Press Releases", link: "/sections/undesigned/ud.htmls" },
+		{ text: "Photo Gallery", link: "/sections/undesigned/ud.html" },
+		{ text: "Video Gallery", link: "/sections/undesigned/ud.html" },
 	],
-	blog: [{ text: "Visit Blogs", link: "https://www.cmrit.ac.in/blog" }],
-	nirf: [
-		{ text: "Rankings", link: "#rankings" },
-		{ text: "Criteria", link: "#criteria" },
-		{ text: "Reports", link: "#reports" },
-		{ text: "Achievements", link: "#achievements" },
-		{ text: "Statistics", link: "#statistics" },
-		{ text: "Institution Details", link: "#details" },
-		{ text: "Goals", link: "#goals" },
-		{ text: "Comparisons", link: "#comparisons" },
-		{ text: "Feedback", link: "#feedback" },
-		{ text: "Future Plans", link: "#future-plans" },
-	],
+
+	nirf: [{ text: "Rankings", link: "/sections/nirf/nirf.html" }],
 };
 
 // Add hover listeners
@@ -169,4 +220,8 @@ hoverCard.addEventListener("mouseleave", () => {
 	hoverCard.classList.remove("active");
 });
 
-//handling the page redirections
+//for button on the header
+
+document.getElementById("btn-id").addEventListener("click", function () {
+	window.location.href = "/sections/about/about_cmrit/cmrit.html";
+});

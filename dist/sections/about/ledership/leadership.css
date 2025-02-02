@@ -1,0 +1,109 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	--navbar-height: 80px;
+	--primary-color: #ad7116;
+	--secondary-color: #b2b0c0;
+	--btn-color: #00bcd4;
+	--hovered-color: grey;
+}
+
+h1 {
+	margin: 1rem;
+	font-size: xx-large;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 1rem;
+}
+.img-class {
+	width: 100%;
+
+	border: 1px solid white;
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-class img {
+	width: 90%;
+	object-fit: cover;
+	border: 1px solid white;
+	border-radius: 0.5rem;
+	display: block;
+}
+
+.leadership {
+	width: 100%;
+	background-color: white;
+}
+.leadership p {
+	text-align: center;
+	margin-top: 1rem;
+	font-size: xx-large;
+}
+
+.info-container {
+	display: flex;
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.info-box {
+	background-color: var(--secondary-color);
+	padding: 0.5rem;
+	margin: 1rem;
+	border: 1px solid var(--secondary-color);
+	border-radius: 0.8rem;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto;
+	gap: 1rem;
+	text-align: center;
+}
+
+.info-box h2 {
+	grid-column: span 2;
+	align-self: center;
+	justify-self: center;
+}
+
+.info-box img {
+	width: 100%; /* Take the full width of the grid cell */
+	height: 100%; /* Take the full height of the grid cell */
+	border-radius: 0.8rem;
+	object-fit: cover;
+}
+
+.info-box p {
+	grid-column: 2;
+
+	text-align: left;
+	align-self: left;
+
+	font-size: larger;
+
+	overflow: auto;
+}
+
+@media (max-width: 768px) {
+	.info-box {
+		grid-template-columns: 1fr;
+	}
+	.info-box img {
+		grid-column: span 2;
+		width: 100%;
+	}
+}

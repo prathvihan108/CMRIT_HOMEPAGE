@@ -1,0 +1,144 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	--navbar-height: 80px;
+	--primary-color: #ad7116;
+	--secondary-color: #b2b0c0;
+	--btn-color: #00bcd4;
+	--hovered-color: grey;
+}
+
+h1 {
+	margin: 1rem;
+	font-size: xx-large;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.cmrgi {
+	width: 100%;
+	background-color: white;
+}
+.cmrgi p {
+	text-align: center;
+	margin-top: 1rem;
+	font-size: xx-large;
+}
+
+.info-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.info-box {
+	background-color: var(--secondary-color);
+	padding: 0.5rem;
+	margin: 1rem;
+	border: 1px solid --var(--secondary-color);
+	border-radius: 0.8rem;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 0.3fr 0.7fr;
+	gap: 1rem;
+	text-align: center;
+}
+
+.info-box h2 {
+	grid-column: span 2;
+	align-self: center;
+	justify-self: center;
+}
+
+.info-box img {
+	grid-column: 1;
+	align-self: center;
+	justify-self: center;
+	border-radius: 0.8rem;
+}
+
+.info-box p {
+	grid-column: 2;
+
+	text-align: left;
+	align-self: center;
+
+	font-size: larger;
+}
+
+@media (max-width: 768px) {
+	.info-box {
+		grid-template-columns: 1fr;
+	}
+	.info-box img {
+		grid-column: span 2;
+		width: 100%;
+	}
+}
+
+/* other schools */
+.schools-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 1rem;
+	margin: 1rem;
+	background-color: var(--secondary-color);
+	padding: 0.5rem;
+	align-items: stretch;
+	border: 1px solid var(--secondary-color);
+	border-radius: 0.8rem;
+}
+.schools-box {
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 0.2rem;
+
+	background-color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	border-radius: 0.8rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.schools-box:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.schools-box img {
+	border: 1px solid --primary-color;
+	border-radius: 0.8rem;
+	width: 100%;
+}
+
+.schools-box p {
+	font-size: large;
+	color: black;
+}
+
+@media (max-width: 768px) {
+	.schools-container {
+		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	}
+	.schools-box img {
+		width: 100%;
+		height: auto;
+	}
+	.schools-box p {
+		font-size: small;
+		color: black;
+	}
+}
