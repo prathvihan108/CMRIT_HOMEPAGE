@@ -150,7 +150,7 @@ const cardContent = {
 		},
 		{
 			text: "CMRIT CICC",
-			link: "https://www.cmrit.ac.in/college-internal-complaints-committee-ccic/",
+			link: "/sections/cells/cicc/cicc.html",
 		},
 		{
 			text: "SC-ST & OBC Cell",
