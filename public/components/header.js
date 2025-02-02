@@ -220,4 +220,8 @@ hoverCard.addEventListener("mouseleave", () => {
 	hoverCard.classList.remove("active");
 });
 
-//handling the page redirections
+//for button on the header
+
+document.getElementById("btn-id").addEventListener("click", function () {
+	window.location.href = "/sections/about/about_cmrit/cmrit.html";
+});
