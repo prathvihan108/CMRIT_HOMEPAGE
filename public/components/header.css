@@ -377,6 +377,19 @@ iframe {
 		letter-spacing: 0.1rem;
 		line-height: 1;
 		text-align: center;
+		font-size: larger;
+	}
+	.read-more {
+		padding: 1rem 2rem !important;
+		font-size: 1.5rem !important;
+		width: auto;
+		height: auto;
+	}
+	.btn-video {
+		padding: 1rem 2rem !important;
+		font-size: 1.5rem !important;
+		width: auto;
+		height: auto;
 	}
 }
 @media (max-width: 400px) {
@@ -395,5 +408,18 @@ iframe {
 		letter-spacing: 0.01rem;
 		line-height: 01;
 		text-align: center;
+		font-size: larger;
+	}
+	.read-more {
+		padding: 1rem 2rem; /* Increase padding for bigger size */
+		font-size: 3.5rem; /* Increase font size */
+		width: auto; /* Adjust width automatically */
+		height: auto; /* Adjust height automatically */
+	}
+	.btn-video {
+		padding: 1rem 2rem; /* Increase padding for bigger size */
+		font-size: 3.5rem; /* Increase font size */
+		width: auto; /* Adjust width automatically */
+		height: auto; /* Adjust height automatically */
 	}
 }

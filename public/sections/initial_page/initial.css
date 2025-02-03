@@ -708,8 +708,12 @@ body {
 		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 	}
 	.program-box p {
-		font-size: 0.7rem;
-		text-align: left;
+		.program-box p {
+			margin: 1.5rem auto;
+			text-align: center;
+			font-size: 1rem;
+			color: #555;
+		}
 	}
 }
 /* Achievements section */
