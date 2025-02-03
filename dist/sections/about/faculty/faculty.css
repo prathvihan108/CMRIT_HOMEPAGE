@@ -44,8 +44,9 @@ h1 {
 }
 
 .faculty {
-	width: 100%;
+	width: 95%;
 	background-color: white;
+	margin: 1rem auto;
 }
 .faculty p {
 	text-align: center;
@@ -95,6 +96,8 @@ h1 {
 	align-items: center;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	height: 100%;
 }
 
 .info-box p:hover {
@@ -105,7 +108,7 @@ h1 {
 @media (max-width: 768px) {
 	.info-box {
 		grid-template-columns: 1fr;
-		margin: 4rem;
-		padding: 3rem;
+		margin: 1rem;
+		padding: 0.5rem;
 	}
 }

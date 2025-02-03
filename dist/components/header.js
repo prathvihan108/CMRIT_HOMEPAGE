@@ -57,8 +57,8 @@ const cardContent = {
 			text: "All Programs",
 			link: "/sections/academics/programmes/programmes.html",
 		},
-		{ text: "Courses", link: "#departments" },
-		{ text: "Departments", link: "/sections/undesigned/ud.htmls" },
+
+		{ text: "Departments", link: "/sections/undesigned/ud.html" },
 		{
 			text: "Scholarships",
 			link: "/sections/academics/scholarships/scholarships.html",
