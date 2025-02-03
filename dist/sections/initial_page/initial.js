@@ -66,43 +66,19 @@ document.querySelectorAll(".widget").forEach((widget) => {
 	});
 });
 // Achievements scroll view
-const leftArrow = document.querySelector(".left-arrow");
-const rightArrow = document.querySelector(".right-arrow");
-const imageContainer = document.querySelector(".image-container");
+document.addEventListener("DOMContentLoaded", function () {
+	const imageContainer = document.querySelector(".image-container");
+	const leftArrow = document.querySelector(".left-arrow");
+	const rightArrow = document.querySelector(".right-arrow");
 
-// Define the width of an image to scroll by
-let imageWidth = document.querySelector(".image-box").offsetWidth + 1; // Adding some margin for precise scrolling
+	let scrollAmount = 20 * 16; // 20rem in pixels
 
-// Recalculate image width on window resize
-window.addEventListener("resize", () => {
-	imageWidth = document.querySelector(".image-box").offsetWidth + 1;
-});
-
-// Scroll to the previous image (left)
-leftArrow.addEventListener("click", () => {
-	imageContainer.scrollBy({
-		left: -imageWidth,
-		behavior: "smooth",
+	rightArrow.addEventListener("click", () => {
+		imageContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
 	});
-});
-leftArrow.addEventListener("touchstart", () => {
-	imageContainer.scrollBy({
-		left: -imageWidth,
-		behavior: "smooth",
-	});
-});
 
-// Scroll to the next image (right)
-rightArrow.addEventListener("click", () => {
-	imageContainer.scrollBy({
-		left: imageWidth,
-		behavior: "smooth",
-	});
-});
-rightArrow.addEventListener("touchstart", () => {
-	imageContainer.scrollBy({
-		left: imageWidth,
-		behavior: "smooth",
+	leftArrow.addEventListener("click", () => {
+		imageContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
 	});
 });
 
