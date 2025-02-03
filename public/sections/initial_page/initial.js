@@ -28,10 +28,12 @@ function toggleWidget(widget) {
 	// Toggle content visibility
 	if (content.style.display === "block") {
 		content.style.display = "none";
-		toggleImg.src = "/assets/images/plus.svg"; // Replace with the plus icon
+		toggleImg.src =
+			"https://res.cloudinary.com/dgb8e04rd/image/upload/v1738563417/plus_dcwzqr.svg"; // Replace with the plus icon
 	} else {
 		content.style.display = "block";
-		toggleImg.src = "/assets/images/cross.svg"; // Replace with the minus icon
+		toggleImg.src =
+			"https://res.cloudinary.com/dgb8e04rd/image/upload/v1738563378/cross-svgrepo-com_xopq7y.svg"; // Replace with the minus icon
 	}
 }
 
