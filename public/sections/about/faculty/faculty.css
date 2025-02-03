@@ -44,8 +44,9 @@ h1 {
 }
 
 .faculty {
-	width: 100%;
+	width: 95%;
 	background-color: white;
+	margin: 1rem auto;
 }
 .faculty p {
 	text-align: center;
