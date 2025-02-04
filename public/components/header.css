@@ -40,6 +40,9 @@ header {
 	overflow: hidden;
 	padding-top: var(--navbar-height);
 }
+.menu-toggle img {
+	transform: scale(0.8); /* Reduce size to 70% */
+}
 
 .elementor-video {
 	position: absolute;
