@@ -8,6 +8,9 @@ The website is fully responsive, adapting seamlessly to all screen sizes using f
 ### TechStack
 HTML,CSS,JavaScript,Vite
 
+## Live Link of Project 
+[cmrit_homepage](https://cmrithomepage.netlify.app)
+
 ## 🚀 Project Setup
 
 1. **Clone the repository:**
