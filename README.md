@@ -5,7 +5,7 @@ CMR Institute of Technology (CMRIT) is a private engineering college established
 ## 🌐 About the Project
 This is a static website built using HTML, CSS, and JavaScript.
 The website is fully responsive, adapting seamlessly to all screen sizes using flexible units and media queries, ensuring a smooth and optimized user experience across desktops, tablets, and mobile devices.
-# TechStack
+### TechStack
 HTML,CSS,JavaScript,Vite
 
 ## 🚀 Project Setup
